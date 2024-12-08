@@ -26,18 +26,62 @@
       <div class="navbar-nav">
         <a href="#home">Home</a>
         <a href="#menu">Menu</a>
+        <a href="#products">Produk</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
       </div>
 
       <div class="navbar-extra">
-        <a href="#" id="search"><i data-feather="search"></i></a>
-        <a href="#" id="shopping-bag"><i data-feather="shopping-bag"></i></a>
+        <a href="#" id="search-button"><i data-feather="search"></i></a>
+        <a href="#" id="shopping-bag-button"><i data-feather="shopping-bag"></i></a>
         <a href="#" id="hamburger-menu"><i data-feather="menu"></i></a>
       </div>
+
+      <!--Search Form start-->
+      <div class="search-form">
+        <input type="search" id="search-box" placeholder="search here..." />
+        <label for="seach-box"><i data-feather="search"></i></label>
+      </div>
+      <!--Search Form end-->
+
+      <!--Shopping Card start-->
+      <div class="shopping-cart">
+        <div class="cart-item">
+          <img src="img/product/p1.jpg" alt="Produk 1">
+          <div class="item-detail">
+            <h3>Produk 1</h3>
+            <div class="item-price">IDR 35.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/p2.jpg" alt="Produk 2">
+          <div class="item-detail">
+            <h3>Produk 2</h3>
+            <div class="item-price">IDR 30.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+        <div class="cart-item">
+          <img src="img/product/p3.jpg" alt="Produk 3">
+          <div class="item-detail">
+            <h3>Produk 3</h3>
+            <div class="item-price">IDR 28.000</div>
+          </div>
+          <i data-feather="trash-2" class="remove-item"></i>
+        </div>
+      </div>
+      <!--Shopping Card end-->
     </nav>
 
     <!--Navbar End-->
+
+    <video id="background-video" autoplay loop muted poster>
+      <source
+        src="https://videos.pexels.com/video-files/6627960/6627960-uhd_2732_1440_25fps.mp4"
+        type="video/mp4"
+      />
+    </video>
 
     <!--Hero Selection start-->
     <section class="hero" id="home">
@@ -52,7 +96,7 @@
     <!--Menu Section Start-->
     <section id="menu" class="menu">
       <h2>Menu <span>Kopi :</span></h2>
-      <p>Silahkan pilih menu kopi, yang kami sediakan.</p>
+      <p>Silahkan pilih menu kopi, yang tesedia.</p>
       <div class="row">
         <div class="menu-card">
           <img src="img/menu/1.jpg" alt="Espresso" class="menu-card-img" />
@@ -73,6 +117,75 @@
     </section>
     <!--Menu Section End-->
 
+    <!--Product Section Start-->
+    <selection class="products" id="products">
+      <h2>Produk <span>Unggulan Kami</span></h2>
+      <p>Berikut adalah produk unggulan kami :</p>
+      <div class="row">
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-bag"></i></a>
+            <a href="#"><i data-feather="info"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/p1.jpg" alt="Produk 1" />
+          </div>
+          <div class="product-content">
+            <h3>JBC - 1860 Light Roast</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+            </div>
+            <div class="product-price">IDR 35.000 <span>IDR 40.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-bag"></i></a>
+            <a href="#"><i data-feather="info"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/p2.jpg" alt="Produk 2" />
+          </div>
+          <div class="product-content">
+            <h3>JBC - LOX Dark Roast</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 30.000</span></div>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-icons">
+            <a href="#"><i data-feather="shopping-bag"></i></a>
+            <a href="#"><i data-feather="info"></i></a>
+          </div>
+          <div class="product-image">
+            <img src="img/product/p3.jpg" alt="Produk 3" />
+          </div>
+          <div class="product-content">
+            <h3>JBC - JUP Medium Roast</h3>
+            <div class="product-stars">
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star" class="fill"></i>
+              <i data-feather="star"></i>
+            </div>
+            <div class="product-price">IDR 28.000 <span>IDR 35.000</span></div>
+          </div>
+        </div>
+      </div>
+    </selection>
+    <!--Product Section End-->
+
     <!--About Section Start-->
     <section class="about" id="about">
       <h2>About <span>Us</span></h2>
@@ -84,9 +197,9 @@
           <h3>Kenapa Memilih Kopi Dari Kami ?</h3>
           <p>
             Sebenarnya kami ini nggak jualan kopi, tapi karena tugasnya untuk
-            membuat website coffee shop. Jadi kami buat saja website sederhana ini,
-            diselenggarakan dengan cara kebut semalam dan dalam tempo yang sesingkat-singkatnya.
-            Hidup Paket Begadang, Kapan Makan Gratisnya!!!
+            membuat website coffee shop. Jadi kami buat saja website sederhana
+            ini, diselenggarakan dengan cara kebut semalam dan dalam tempo yang
+            sesingkat-singkatnya. Hidup Paket Begadang, Kapan Makan Gratisnya!!!
           </p>
           <p>
             Provident quia soluta suscipit placeat iure. Reprehenderit
@@ -102,24 +215,13 @@
     <section class="contact" id="contact">
       <h2>Contact <span>Kami :</span></h2>
       <div class="content">
-        <p>
-        Mahasiswa Prodi Sistem Informasi - Tahun 2024 :
-        </p>
-        <p>
-        = 2441006 - YOSIA JEREMY FERDY TUMBEL
-        </p>
-        <p>
-        = 2441024 - FAHRUL MUSYAFA
-        </p>
-        <p>
-        = 2441033 - FATHUL MUBIN
-        </p>
-        <p>
-        = 2441025 - DARY DZAKIR AHMAD
-        </p>
-        <p>
-        = 2441035 - ALFREDS GILBERTO LAMBAR
-        </p>
+        <p>Ingin Berdiskusi Dengan Kami, Hubungi</p>
+        <p>Mahasiswa Prodi Sistem Informasi - Tahun 2024 :</p>
+        <p>= 2441006 - YOSIA JEREMY FERDY TUMBEL</p>
+        <p>= 2441024 - FAHRUL MUSYAFA</p>
+        <p>= 2441033 - FATHUL MUBIN</p>
+        <p>= 2441025 - DARY DZAKIR AHMAD</p>
+        <p>= 2441035 - ALFREDS GILBERTO LAMBAR</p>
       </div>
 
       <div class="row">
